@@ -9,7 +9,6 @@ permissions:
 
 jobs:
   import-source:
-    if: ${{ hashFiles('vpn-bot-source.zip') != '' }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
